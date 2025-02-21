@@ -19,33 +19,34 @@
 
     <div class="first-name__box">
       <p>First Name</p>
-      <input type="text" />
+      <input type="text" id="first-name"/>
       <p>This field is required</p>
     </div>
 
     <div class="last-name__box">
       <p>Last Name</p>
-      <input type="text" />
+      <input type="text" id="last-name"/>
       <p>This field is required</p>
     </div>
 
     <div class="email-address__box">
       <p>Email Address</p>
-      <input type="text" />
+      <input type="text" id="email"/>
       <p>Please enter a valid email address</p>
     </div>
     
     <div class="query-type__box">
       <p>Query Type</p>
-      <input type="radio" id="general-enquiry">
+      <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
       <label for="general-enquiry">General Enquiry</label>
-      <input type="radio" id="support-request">
+      <input type="radio" id="support-request" name="query-type" value="Support Request">
       <label for="support-request">Support Request</label>
       <p>Please select a query type</p>
     </div>
+
     <div class="message__box">
       <p>Message</p>
-      <textarea></textarea>
+      <textarea id="message"></textarea>
       <p>This field is required</p>
     </div>
 
@@ -56,14 +57,14 @@
     </div>
 
     <div class="submit__box">
-      <button>Submit</button>
+      <button id="submit">Submit</button>
 
     </div>
 
 
   </div>
 
-  <div class="alert-box">
+  <div class="success-box">
     <h3>Message Sent!</h3>
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
@@ -72,6 +73,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  
+
+  <script src="app.js"></script>
 </body>
 </html>
