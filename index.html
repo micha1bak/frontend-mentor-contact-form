@@ -9,38 +9,69 @@
 </head>
 
 <body>
+  
+  <div class="contact-form__card">
+    
+    
+    <div calss="header-text__box">
+      <h1>Contact Us</h1>
+    </div>
 
-  Contact Us
+    <div class="first-name__box">
+      <p>First Name</p>
+      <input type="text" />
+      <p>This field is required</p>
+    </div>
 
-  First Name
-  This field is required
+    <div class="last-name__box">
+      <p>Last Name</p>
+      <input type="text" />
+      <p>This field is required</p>
+    </div>
 
-  Last Name
-  This field is required
+    <div class="email-address__box">
+      <p>Email Address</p>
+      <input type="text" />
+      <p>Please enter a valid email address</p>
+    </div>
+    
+    <div class="query-type__box">
+      <p>Query Type</p>
+      <input type="radio" id="general-enquiry">
+      <label for="general-enquiry">General Enquiry</label>
+      <input type="radio" id="support-request">
+      <label for="support-request">Support Request</label>
+      <p>Please select a query type</p>
+    </div>
+    <div class="message__box">
+      <p>Message</p>
+      <textarea></textarea>
+      <p>This field is required</p>
+    </div>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+    <div class="consent-checkbox__box">
+      <input type="checkbox" id="consent">
+      <label for="consent">I consent to being contacted by the team</label>
+      <p>To submit this form, please consent to being contacted</p>
+    </div>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+    <div class="submit__box">
+      <button>Submit</button>
 
-  Message
-  This field is required
+    </div>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
 
-  Submit
+  </div>
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  <div class="alert-box">
+    <h3>Message Sent!</h3>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  
 </body>
 </html>
