@@ -45,8 +45,8 @@
     </div>
 
     <div class="message__box">
-      <p>Message</p>
-      <textarea id="message"></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea>
       <p>This field is required</p>
     </div>
 
@@ -57,10 +57,8 @@
     </div>
 
     <div class="submit__box">
-      <button id="submit">Submit</button>
-
+      <button onclick="submit()">Submit</button>
     </div>
-
 
   </div>
 
@@ -69,6 +67,8 @@
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
   
+  <p id="test"></p>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
