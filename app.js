@@ -19,6 +19,7 @@ function validateForm() {
 
   if (firstName.trim().length === 0) {
     document.getElementById('err-first-name').style.display = "block";
+    document.getElementById('first-name').style.border = "1px solid hsl(0, 66%, 54%)";
   } else {
     passedTestsCounter++;
     document.getElementById('err-first-name').style.display = "none";
@@ -26,6 +27,7 @@ function validateForm() {
 
   if (lastName.trim().length === 0) {
     document.getElementById('err-last-name').style.display = "block";
+    document.getElementById('last-name').style.border = "1px solid hsl(0, 66%, 54%)";
     } else {
       passedTestsCounter++;
       document.getElementById('err-last-name').style.display = "none";
@@ -33,6 +35,7 @@ function validateForm() {
 
   if (email.trim().length === 0 || !validateEmail(email)) {
     document.getElementById('err-email').style.display = "block";
+    document.getElementById('email').style.border = "1px solid hsl(0, 66%, 54%)";
     } else {
       passedTestsCounter++;
       document.getElementById('err-email').style.display = "none";
@@ -47,6 +50,7 @@ function validateForm() {
 
   if (message.trim().length === 0 ) {
     document.getElementById('err-message').style.display = "block";
+    document.getElementById('message').style.border = "1px solid hsl(0, 66%, 54%)";
   } else {
     passedTestsCounter++;
     document.getElementById('err-message').style.display = "none";
