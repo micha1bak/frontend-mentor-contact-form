@@ -20,19 +20,19 @@
     <div class="first-name__box">
       <p>First Name</p>
       <input type="text" id="first-name"/>
-      <p>This field is required</p>
+      <p id="err-first-name" class="err">This field is required</p>
     </div>
 
     <div class="last-name__box">
       <p>Last Name</p>
       <input type="text" id="last-name"/>
-      <p>This field is required</p>
+      <p id="err-last-name" class="err">This field is required</p>
     </div>
 
     <div class="email-address__box">
       <p>Email Address</p>
       <input type="text" id="email"/>
-      <p>Please enter a valid email address</p>
+      <p id="err-email" class="err">Please enter a valid email address</p>
     </div>
     
     <div class="query-type__box">
@@ -41,28 +41,28 @@
       <label for="general-enquiry">General Enquiry</label>
       <input type="radio" id="support-request" name="query-type" value="Support Request">
       <label for="support-request">Support Request</label>
-      <p>Please select a query type</p>
+      <p id="err-query-type" class="err">Please select a query type</p>
     </div>
 
     <div class="message__box">
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" cols="30"></textarea>
-      <p>This field is required</p>
+      <p id="err-message" class="err">This field is required</p>
     </div>
 
     <div class="consent-checkbox__box">
       <input type="checkbox" id="consent">
       <label for="consent">I consent to being contacted by the team</label>
-      <p>To submit this form, please consent to being contacted</p>
+      <p id="err-consent" class="err">To submit this form, please consent to being contacted</p>
     </div>
 
     <div class="submit__box">
-      <button onclick="submit()">Submit</button>
+      <button onclick="validateForm()">Submit</button>
     </div>
 
   </div>
 
-  <div class="success-box">
+  <div id="success-box">
     <h3>Message Sent!</h3>
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
