@@ -22,7 +22,7 @@
     <div class="name">
       <div class="first-name__box">
         <p>First Name <span class="star">*</span></p>
-        <input type="text" id="first-name"/>
+        <input type="text" id="first-name">
         <p id="err-first-name" class="err">This field is required</p>
       </div>
 
@@ -62,10 +62,16 @@
     </div>
 
     <div class="consent-checkbox__box">
+      
       <input type="checkbox" id="consent">
-      <label for="consent">I consent to being contacted by the team <span class="star">*</span></label>
-      <p id="err-consent" class="err">To submit this form, please consent to being contacted</p>
+      
+
+      <div class="checkbox-text">
+        <label for="consent">I consent to being contacted by the <span id="no-wrap">team <span class="star">*</span></span></label>
+      </div>
     </div>
+
+    <p id="err-consent" class="err">To submit this form, please consent to being contacted</p>
 
     <div class="submit__box">
       <button onclick="validateForm()">Submit</button>
