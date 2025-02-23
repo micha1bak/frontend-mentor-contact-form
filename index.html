@@ -10,33 +10,36 @@
 
 <body>
   
+  <div id="success-box">
+    <h3>Message Sent!</h3>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
   <div class="contact-form__card">
     
+    <h1>Contact Us</h1>
     
-    <div calss="header-text__box">
-      <h1>Contact Us</h1>
-    </div>
+    <div class="name">
+      <div class="first-name__box">
+        <p>First Name <span class="star">*</span></p>
+        <input type="text" id="first-name"/>
+        <p id="err-first-name" class="err">This field is required</p>
+      </div>
 
-    <div class="first-name__box">
-      <p>First Name</p>
-      <input type="text" id="first-name"/>
-      <p id="err-first-name" class="err">This field is required</p>
+      <div class="last-name__box">
+        <p>Last Name <span class="star">*</span></p>
+        <input type="text" id="last-name"/>
+        <p id="err-last-name" class="err">This field is required</p>
+      </div>
     </div>
-
-    <div class="last-name__box">
-      <p>Last Name</p>
-      <input type="text" id="last-name"/>
-      <p id="err-last-name" class="err">This field is required</p>
-    </div>
-
     <div class="email-address__box">
-      <p>Email Address</p>
+      <p>Email Address <span class="star">*</span></p>
       <input type="text" id="email"/>
       <p id="err-email" class="err">Please enter a valid email address</p>
     </div>
     
     <div class="query-type__box">
-      <p>Query Type</p>
+      <p>Query Type <span class="star">*</span></p>
       <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
       <label for="general-enquiry">General Enquiry</label>
       <input type="radio" id="support-request" name="query-type" value="Support Request">
@@ -45,14 +48,14 @@
     </div>
 
     <div class="message__box">
-      <label for="message">Message</label>
+      <p>Message <span class="star">*</span></p>
       <textarea id="message" name="message" rows="5" cols="30"></textarea>
       <p id="err-message" class="err">This field is required</p>
     </div>
 
     <div class="consent-checkbox__box">
       <input type="checkbox" id="consent">
-      <label for="consent">I consent to being contacted by the team</label>
+      <label for="consent">I consent to being contacted by the team <span class="star">*</span></label>
       <p id="err-consent" class="err">To submit this form, please consent to being contacted</p>
     </div>
 
@@ -61,13 +64,6 @@
     </div>
 
   </div>
-
-  <div id="success-box">
-    <h3>Message Sent!</h3>
-    <p>Thanks for completing the form. We'll be in touch soon!</p>
-  </div>
-  
-  <p id="test"></p>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 

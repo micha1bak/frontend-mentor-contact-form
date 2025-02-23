@@ -1,31 +1,3 @@
-
-// function test() {
-
-//   // type: string
-//   const firstName = document.getElementById('first-name').value;
-//   const lastName = document.getElementById('last-name').value;
-//   const email = document.getElementById('email').value;
-
-//   // type boolean || true if any option selected, false otherwise
-//   const isQueryTypeSelected = 
-//   document.querySelector('input[name="query-type"]:checked') ? true : false;
-
-//   // type: string
-//   const message = document.getElementById('message').value;
-
-//   // type: boolean || true if checked, false if not checked
-//   const isCnsent = document.getElementById('consent').checked;
-
-//   let text = '';
-//   text += 'firstName: ' + firstName.replace(/\s/g, "").length + '<br>';
-//   text += 'lastName: ' + lastName + '<br>';
-//   text += 'email: ' + email + '<br>';
-//   text += 'isQueryTypeSelected: ' + isQueryTypeSelected + '<br>';
-//   text += 'message: ' + message + '<br>';
-//   text += 'isConsent: ' + isCnsent + '<br>';
-//   document.getElementById('test').innerHTML = text;
-// }
-
 function validateForm() {
 
   // type: string
@@ -59,7 +31,7 @@ function validateForm() {
       document.getElementById('err-last-name').style.display = "none";
     }
 
-  if (email.trim().length === 0) {
+  if (email.trim().length === 0 || !validateEmail(email)) {
     document.getElementById('err-email').style.display = "block";
     } else {
       passedTestsCounter++;
@@ -90,12 +62,12 @@ function validateForm() {
   if (passedTestsCounter === 6) {
     showSuccessBox();
     clearForm();
-  } else {
-    
   }
+}
 
-  document.getElementById('test').innerHTML = 'passedTestsCounter: ' + passedTestsCounter + '/6';
-
+function validateEmail(email) {
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailPattern.test(email);
 }
 
 function clearForm() {
@@ -109,5 +81,6 @@ function clearForm() {
 }
 
 function showSuccessBox() {
-  document.getElementById('success-box').style.display = 'block';
+  document.getElementById('success-box').style.visibility = 'visible';
+  document.getElementById('success-box').style.top = "0";
 }

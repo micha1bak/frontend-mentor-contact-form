@@ -1,11 +1,118 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+  font-family: 'Karla Italic'; 
+  src: url('assets/fonts/Karla-Italic-VariableFont_wght.ttf') format('truetype'); 
+  font-weight: normal; 
+  font-style: normal;  
+}
 
+@font-face {
+  font-family: 'Karla'; 
+  src: url('assets/fonts/Karla-VariableFont_wght.ttf') format('truetype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Karla";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(148, 38%, 91%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .err {
   display: none;
-  color: red;
+  color: hsl(0, 66%, 54%);
+}
+#success-box {
+  background: hsl(186, 15%, 59%);
+  border-radius: 7px;
+  padding: 10px;
+  visibility: hidden;
+  position: fixed;
+  top:-100%;
+}
+.star {
+  color: hsl(169, 82%, 27%);
 }
 
-#success-box {
-  display: none;
+.contact-form__card {
+  margin-top: 20px;
+  width: 90%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+h1 {
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+p {
+  padding: 7px 0;
+  font-size: 0.7rem;
+}
+
+input {
+  border-radius: 4px;
+}
+
+/* NAME */
+
+.name {
+  display:flex;
+  justify-content: stretch;
+  flex-wrap: wrap;  
+  margin: 0 20px;
+}
+
+.first-name__box {
+  margin-bottom: 7px;
+  width: 50%;
+  min-width: 175px;
+}
+
+.last-name__box {
+  margin-bottom: 7px;
+  width: 50%;
+  min-width: 175px;
+}
+
+#first-name {
+  padding: 8px;
+  width: 95%;
+  min-width: 150px;
+}
+
+#last-name {
+  padding: 8px;
+  width: 95%;
+  min-width: 150px;
+}
+
+@media (max-width: 432px) {
+
+  .first-name__box {
+    width: 100%;
+  }
+
+  .last-name__box {
+    width: 100%;
+  }
+}
+
+/* EMAIL */
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
