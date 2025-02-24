@@ -88,3 +88,19 @@ function showSuccessBox() {
   document.getElementById('success-box').style.visibility = 'visible';
   document.getElementById('success-box').style.top = "0";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const inputs = document.querySelectorAll("input");
+
+  inputs.forEach((input, index) => {
+    input.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        const nextInput = inputs[index + 1];
+        if (nextInput) {
+          nextInput.focus();
+        }
+      }
+    });
+  });
+});
