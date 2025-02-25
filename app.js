@@ -23,6 +23,7 @@ function validateForm() {
   } else {
     passedTestsCounter++;
     document.getElementById('err-first-name').style.display = "none";
+    document.getElementById('first-name').style.border = "1px solid #aaa";
   }
 
   if (lastName.trim().length === 0) {
@@ -31,6 +32,7 @@ function validateForm() {
     } else {
       passedTestsCounter++;
       document.getElementById('err-last-name').style.display = "none";
+      document.getElementById('last-name').style.border = "1px solid #aaa";
     }
 
   if (email.trim().length === 0 || !validateEmail(email)) {
@@ -39,6 +41,7 @@ function validateForm() {
     } else {
       passedTestsCounter++;
       document.getElementById('err-email').style.display = "none";
+      document.getElementById('email').style.border = "1px solid #aaa";
     }
 
   if (!isQueryTypeSelected) {
@@ -54,6 +57,7 @@ function validateForm() {
   } else {
     passedTestsCounter++;
     document.getElementById('err-message').style.display = "none";
+    document.getElementById('message').style.border = "1px solid #aaa";
   }
 
   if (!isCnsent) {
