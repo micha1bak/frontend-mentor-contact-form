@@ -62,7 +62,7 @@ body {
   color: hsl(169, 82%, 27%);
 }
 
-main {
+form {
   margin-top: 6%;
   min-width: 205px;
   width: 90%;
@@ -80,6 +80,11 @@ h1 {
 }
 
 p {
+  padding: 7px 0;
+  font-size: 0.7rem;
+}
+
+label {
   padding: 7px 0;
   font-size: 0.7rem;
 }
@@ -109,7 +114,7 @@ input[type=radio] {
   margin: 0 20px;
 }
 
-.first-name__box {
+#first {
   margin-bottom: 8px;
   width: 100%;
   min-width: 150px;
@@ -134,7 +139,7 @@ input[type=radio] {
 }
 
 @media (min-width: 433px) {
-  .first-name__box {
+  #first {
     width: 48%;
   }
 
