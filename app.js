@@ -1,5 +1,6 @@
 function validateForm() {
-
+  
+  console.log(404)
   // type: string
   const firstName = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
@@ -107,4 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+});
+
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault();
 });

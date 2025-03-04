@@ -17,10 +17,10 @@
     </section>
     <form>
       <h1>Contact Us</h1>
-      <section id="name">
+      <section id="name-container">
         <div id="first">
           <label for="first-name">First Name <span class="star">*</span></label>
-          <input type="text" id="first-name" autofocus>
+          <input type="text" id="first-name">
           <p id="err-first-name" class="err">This field is required</p>
         </div>
         <div id="last">
@@ -29,28 +29,25 @@
           <p id="err-last-name" class="err">This field is required</p>
         </div>
       </section>
-
-      <div class="email-address__box">
-        <p>Email Address <span class="star">*</span></p>
+      <section id="email-container">
+        <label for="email">Email Address <span class="star">*</span></label>
         <input type="text" id="email"/>
         <p id="err-email" class="err">Please enter a valid email address</p>
-      </div>
-      
-      <div class="query-type__box">
+      </section>
+      <section id="query-container">
         <p>Query Type <span class="star">*</span></p>
         <div id="radio">
           <div class="radio-button">
             <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
             <label for="general-enquiry">General Enquiry</label>
           </div>
-
           <div class="radio-button">
             <input type="radio" id="support-request" name="query-type" value="Support Request">
             <label for="support-request">Support Request</label>
           </div>
         </div>
         <p id="err-query-type" class="err">Please select a query type</p>
-      </div>
+      </section>
 
       <div class="message__box">
         <p>Message <span class="star">*</span></p>
