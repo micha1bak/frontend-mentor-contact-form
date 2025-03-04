@@ -38,7 +38,7 @@ body {
   margin-top: 20px;
   visibility: visible;
   position: fixed;
-  top:00%;
+  top:-100%;
 }
 
 #popup > header {
@@ -62,7 +62,7 @@ body {
   color: hsl(169, 82%, 27%);
 }
 
-.contact-form__card {
+main {
   margin-top: 6%;
   min-width: 205px;
   width: 90%;
@@ -102,7 +102,7 @@ input[type=radio] {
 
 /* NAME */
 
-.name {
+#name {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;  
@@ -115,7 +115,7 @@ input[type=radio] {
   min-width: 150px;
 }
 
-.last-name__box {
+#last {
   margin-bottom: 8px;
   width: 100%;
   min-width: 150px;
@@ -138,7 +138,7 @@ input[type=radio] {
     width: 48%;
   }
 
-  .last-name__box {
+  #last {
     width: 48%;
   }
 }
