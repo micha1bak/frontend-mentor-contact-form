@@ -41,15 +41,16 @@ body {
   top:00%;
 }
 
-#line {
+#popup > header {
   display: flex;
   align-items: center;
 }
 
-#line h3 {
+#popup > header h3 {
   padding-left: 10px;
 }
 
+/*todo: fix this*/
 #svg {
   width: 20px;
   height: 20px;
