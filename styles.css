@@ -85,7 +85,7 @@ p {
 }
 
 label {
-  padding: 7px 0;
+  padding: 0.7px 0;
   font-size: 0.7rem;
 }
 
@@ -230,13 +230,13 @@ input[type=radio] {
 
 /* CONSENT */
 
-.consent-checkbox__box {
+.consent-box {
   margin: 20px 20px 0 20px;
   display: flex;
   align-items: center;
 }
 
-.consent-checkbox__box label {
+.consent-box label {
   padding-left: 10px;
   cursor: pointer;
 }
@@ -257,11 +257,11 @@ input[type=radio] {
 }
 /* SUBMIT */
 
-.submit__box {
+.submit-button {
   margin: 20px;
 }
 
-.submit__box button {
+.submit-button button {
   display: block;
   background-color: hsl(169, 82%, 27%);
   border: 0;
@@ -271,7 +271,7 @@ input[type=radio] {
   color: white;
 }
 
-.submit__box button:hover {
+.submit-button button:hover {
   background-color: hsl(187, 24%, 22%);
   cursor: pointer;
 }
