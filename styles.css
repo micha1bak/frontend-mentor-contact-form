@@ -29,7 +29,7 @@ body {
   display: none;
   color: hsl(0, 66%, 54%);
 }
-#success-box {
+#popup {
   background: hsl(187, 24%, 22%);
   color: white;
   border-radius: 7px;
@@ -38,7 +38,7 @@ body {
   margin-top: 20px;
   visibility: visible;
   position: fixed;
-  top:-100%;
+  top:00%;
 }
 
 #line {

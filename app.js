@@ -89,8 +89,8 @@ function clearForm() {
 }
 
 function showSuccessBox() {
-  document.getElementById('success-box').style.visibility = 'visible';
-  document.getElementById('success-box').style.top = "0";
+  document.getElementById('popup').style.visibility = 'visible';
+  document.getElementById('popup').style.top = "0";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
