@@ -35,8 +35,8 @@
         <p id="err-email" class="err">Please enter a valid email address</p>
       </section>
       <section id="query-container">
-        <p>Query Type <span class="star">*</span></p>
-        <div id="radio">
+        <fieldset>
+          <legend>Query Type <span class="star">*</span></legend>
           <div class="radio-button">
             <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
             <label for="general-enquiry">General Enquiry</label>
@@ -45,15 +45,14 @@
             <input type="radio" id="support-request" name="query-type" value="Support Request">
             <label for="support-request">Support Request</label>
           </div>
-        </div>
+        </fieldset>
         <p id="err-query-type" class="err">Please select a query type</p>
       </section>
-
-      <div class="message__box">
-        <p>Message <span class="star">*</span></p>
+      <section id="message-container">
+        <label for="message">Message <span class="star">*</span></label>
         <textarea id="message" name="message"></textarea>
         <p id="err-message" class="err">This field is required</p>
-      </div>
+      </section>
 
       <div class="consent-checkbox__box">
         <input type="checkbox" id="consent">

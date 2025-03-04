@@ -190,13 +190,16 @@ input[type=radio] {
   cursor: pointer;
 }
 
-#radio {
+#query-container > fieldset {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  border: 0;
 }
 
-
+#query-container > fieldset > legend {
+  font-size: 0.7em;
+}
 
 @media (min-width: 433px) {
   .radio-button {
@@ -208,7 +211,7 @@ input[type=radio] {
 
 /* MESSAGE */
 
-.message__box {
+#message-container {
   margin: 0 20px;
 }
 
