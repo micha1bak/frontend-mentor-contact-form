@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+
+  <body>
+    
+    <div id="success-box">
+        <div id="line">
+        <div id="svg"> </div>
+        <h3>Message Sent!</h3>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <div class="contact-form__card">
+
+      <h1>Contact Us</h1>
+      
+      <div class="name">
+        <div class="first-name__box">
+          <p>First Name <span class="star">*</span></p>
+          <input type="text" id="first-name" autofocus>
+          <p id="err-first-name" class="err">This field is required</p>
+        </div>
+
+        <div class="last-name__box">
+          <p>Last Name <span class="star">*</span></p>
+          <input type="text" id="last-name"/>
+          <p id="err-last-name" class="err">This field is required</p>
+        </div>
+      </div>
+
+      <div class="email-address__box">
+        <p>Email Address <span class="star">*</span></p>
+        <input type="text" id="email"/>
+        <p id="err-email" class="err">Please enter a valid email address</p>
+      </div>
+      
+      <div class="query-type__box">
+        <p>Query Type <span class="star">*</span></p>
+        <div id="radio">
+          <div class="radio-button">
+            <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
+            <label for="general-enquiry">General Enquiry</label>
+          </div>
+
+          <div class="radio-button">
+            <input type="radio" id="support-request" name="query-type" value="Support Request">
+            <label for="support-request">Support Request</label>
+          </div>
+        </div>
+        <p id="err-query-type" class="err">Please select a query type</p>
+      </div>
+
+      <div class="message__box">
+        <p>Message <span class="star">*</span></p>
+        <textarea id="message" name="message"></textarea>
+        <p id="err-message" class="err">This field is required</p>
+      </div>
+
+      <div class="consent-checkbox__box">
+        <input type="checkbox" id="consent">
+        <label for="consent">I consent to being contacted by the <span id="no-wrap">team <span class="star">*</span></span></label>
+      </div>
+
+      <p id="err-consent" class="err">To submit this form, please consent to being contacted</p>
+
+      <div class="submit__box">
+        <button onclick="validateForm()">Submit</button>
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/micha1bak" target="_blank">Michał Bąk</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
